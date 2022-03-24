@@ -1,0 +1,23 @@
+<div id="mode"> 
+    <div>
+        <img src="../assets/IMGs/bank.jpg" width="400px">
+    </div>
+    <div>
+        <p> <input type="text" [(ngModel)]="wA" id="A1" placeholder="Enter Amount"></p>
+        <p> <button (click)="getMoney()"  class="btnA"> Withdrawal </button> </p>
+         
+    </div>
+    <div>
+        <p> <input type="text" [(ngModel)]="credit" id="A2" placeholder="Put Money"></p>
+        <p> <button (click)="putMoney()" class="btnB"> Now check current balance </button></p>
+        
+    </div>
+    <div>
+        <h3>Create New Account</h3> 
+        <p><input type="text" [(ngModel)]="Name" id="A3" placeholder="Enter Name"/></p>
+        <p><input type="text" [(ngModel)]="emailP" id="A4" placeholder="Enter email"/></p>
+        <p><input type="text" [(ngModel)]="cash" id="A5" placeholder="Enter ammount"/></p>
+        <p><button type="button" (click)="createDev()" id="btnC">Submmit</button></p> 
+        
+    </div>
+</div>
